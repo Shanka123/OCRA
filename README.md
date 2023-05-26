@@ -12,19 +12,19 @@
 
 ## Pretraining Slot Attention
 
-# ART
+### ART
 
-# SVRT
+### SVRT
 
-# CLEVR-ART
+### CLEVR-ART
 
 ## Training Relational Abstraction
 
-# ART
+### ART
 
-# SVRT
+### SVRT
 
-# CLEVR-ART
+### CLEVR-ART
 
 ## Training slot based reasoning baselines
 
