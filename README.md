@@ -32,14 +32,14 @@ The pretrained slot attention model for the SVRT dataset using 1000 samples for 
 
 Generate the SVRT dataset using https://fleuret.org/cgi-bin/gitweb/gitweb.cgi?p=pysvrt.git;a=summary 
 
-Put the images for each of the tasks under 'svrt/' in a folder named `results_problem_1` for task 1 and so on.
+Put the images for each of the tasks under `svrt/` in a folder named `results_problem_1` for task 1 and so on.
 
 
 Create `train_img_files_allclasses.npy` by randomly sampling 10000 images for each task with equal number of images for each class. Each entry of `train_img_files_allclasses.npy` should refer to the path of an image but formatted like `/////svrt/results_problem_1/sample_0_4102.png` 
 
 Similarly create `val_img_files_allclasses.npy` by randomly sampling a different set of 4000 images for each task, `test_img_files_allclasses.npy` by randomly sampling a different set of 40000 images for each task. 
 
-To run on task 1 with 500 training samples run `python train_ocra_svrt.py --batch_size 32  --img_size 128  --configuration 'results_problem_1' --run '1'`
+To train on task 1 with 500 training samples run `python train_ocra_svrt.py --batch_size 32  --img_size 128  --configuration 'results_problem_1' --run '1'`
 
 ## CLEVR-ART
 
