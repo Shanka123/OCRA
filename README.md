@@ -1,4 +1,5 @@
-### This repository contains code for the Object-centric Relational Abstraction (OCRA) model.
+# OCRA : Object-centric Relational Abstraction 
+Official repository for the paper - "[Systematic Visual Reasoning through Object-Centric Relational Abstraction](https://openreview.net/forum?id=8JCZe7QrPy)." 
 
 ## Requirements
 * python 3.9.7
@@ -11,7 +12,7 @@
 * einops==0.4.1
 
 
-### ART
+## ART
 
 The pretrained slot attention model for the ART dataset is given under `weights/slot_attention_autoencoder_6slots_clevrdecoder_morewarmup_lowerlr_nolrdecay_64dim_128res_random_spatial_heldout_unicodes_resizedcropped_continuetraining_run_1_best.pth.tar`
 
@@ -23,7 +24,7 @@ To train on Distribution-of-3 task with $m=95$ run `python train_ocra_dist3.py -
 
 To train on Identity rules task with $m=95$ run `python train_ocra_dist3.py --batch_size 16  --img_size 128 --num_epochs 100 --m_holdout 95 --run '1' --task 'identity_rules' --test_gen_method 'subsample'` 
 
-### SVRT
+## SVRT
 
 The pretrained slot attention model for the SVRT dataset using 500 samples for each task is given under `weights/slot_attention_autoencoder_augmentations_6slots_clevrdecoder_morewarmup_lowerlr_nolrdecay_64dim_128res_grayscale_svrt_alltasks_num_images_250_run_1_more_x3_continuetraining_best.pth.tar`
 
@@ -40,7 +41,7 @@ Similarly create `val_img_files_allclasses.npy` by randomly sampling a different
 
 To run on task 1 with 500 training samples run `python train_ocra_svrt.py --batch_size 32  --img_size 128  --configuration 'results_problem_1' --run '1'`
 
-### CLEVR-ART
+## CLEVR-ART
 
 The pretrained slot attention model for the CLEVR-ART dataset is given under `weights/slot_attention_autoencoder_7slots_clevrdecoder_morewarmup_lowerlr_nolrdecay_64dim_128res_cv2_rgbcolororder_random_spatial_clevrshapes_continuetraining_run_1_best.pth.tar`
 
@@ -56,6 +57,17 @@ To train on Relational match-to-sample task run `python train_ocra_clevr_rmts.py
 
 To train on Identity rules task run `python train_ocra_clevr_idrules.py  --img_size 128 --run '1'`
 
+## Citation
+
+We thank you for showing interest in our work. If our work was beneficial for you, please consider citing us using:
+
+@inproceedings{
+webb2023systematic,
+title={Systematic Visual Reasoning through Object-Centric Relational Abstraction},
+author={Webb, Taylor Whittington and Mondal, Shanka Subhra and Cohen, Jonathan},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023}
+}
 
 
 <!--
