@@ -60,7 +60,7 @@ To train on Identity rules task run `python train_ocra_clevr_idrules.py  --img_s
 ## Citation
 
 We thank you for showing interest in our work. If our work was beneficial for you, please consider citing us using:
-
+```
 @inproceedings{
 webb2023systematic,
 title={Systematic Visual Reasoning through Object-Centric Relational Abstraction},
@@ -68,7 +68,7 @@ author={Webb, Taylor Whittington and Mondal, Shanka Subhra and Cohen, Jonathan},
 booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
 year={2023}
 }
-
+```
 
 <!--
 **ocraneurips/ocraneurips** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
