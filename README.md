@@ -1,5 +1,5 @@
 # OCRA : Object-centric Relational Abstraction 
-Official repository for the paper - "[Systematic Visual Reasoning through Object-Centric Relational Abstraction](https://openreview.net/forum?id=8JCZe7QrPy)." 
+Official repository for the paper - "[Systematic Visual Reasoning through Object-Centric Relational Abstraction](https://arxiv.org/pdf/2306.02500)." 
 
 ## Requirements
 * python 3.9.7
